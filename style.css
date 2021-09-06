@@ -22,6 +22,9 @@ h1{
     height: 300vh;
     margin :100px auto;
 }
+#countdown{
+    padding-right: 40px;
+}
 
 .card{
     display : flex;
