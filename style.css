@@ -10,6 +10,7 @@ h1{
 }
 #date-form{
     display: flex;
+    flex-direction: row;
     justify-content:space-evenly;
     width:100vw;
     margin :100px auto;
@@ -33,4 +34,34 @@ h1{
     border: 1px solid rgb(104, 99, 99);
     box-shadow: 5px 5px 20px;
     margin:20px;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    h1{
+        text-align: center;
+        width: 100vw;
+        margin :100px 0px 30px 0px ;
+        
+    }
+    #date-form{
+        display: flex;
+        flex-direction: column;
+        
+        width:100vw;
+        margin :40px 0px 20px 0px;
+    }
+    #date-form > div {
+        margin: 20px auto;
+    }
+    #card-wrap{
+        display:flex;
+        flex-direction: column;
+        width:100vw;
+        height: 300vh;
+        margin :20px auto;
+    }
+    #countdown{
+        padding-left: 0px;
+    }
 }
