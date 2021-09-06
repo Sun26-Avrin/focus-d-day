@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+    color:white;
+}
+h1{
+    text-align: center;
+    width: 100vw;
+    margin :100px auto;
+    
+}
+#date-form{
+    display: flex;
+    justify-content:space-evenly;
+    width:100vw;
+    margin :100px auto;
+}
+#card-wrap{
+    display:flex;
+    flex-direction: column;
+    width:100vw;
+    height: 300vh;
+    margin :100px auto;
+}
+
+.card{
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+    list-style: none;
+    border-radius: 25px;
+    border: 1px solid rgb(104, 99, 99);
+    box-shadow: 5px 5px 20px;
+    margin:20px;
+}
