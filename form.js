@@ -33,6 +33,7 @@ const onSubmit = (e) => {
         id ,
         text : what_todo.value,
         dDay : dday,
+        day_input,
     };
     DB.push(obj);
     saveToDB();
@@ -42,7 +43,8 @@ const savedDB = localStorage.getItem(DB_KEY);
 if(savedDB !== null){
     DB = JSON.parse(savedDB);
     DB.forEach( (item) => {
-        paintDB(item.dDay,item.text,item.id);
+        countDownTimer(item.text, item.day_input, item.id);
+            
     });
 }
 
